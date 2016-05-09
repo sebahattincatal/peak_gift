@@ -5,7 +5,7 @@ function submitreg() {
         return false;
     }
     else if(form.surname.value == ""){
-        alert( "Soyadınız Girin." );
+        alert( "Soyadınızı Girin." );
         return false;
     }
     else if(form.password.value == ""){
