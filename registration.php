@@ -22,31 +22,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-9"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Kullanıcı Kayıt</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/js/registration.js" />
-		<!--<script language="javascript" type="text/javascript"> 
-		    function submitreg() {
-                var form = document.reg;
-				if(form.name.value == ""){
-                    alert( "İsminizi Girin." );
-                    return false;
-                }
-                else if(form.surname.value == ""){
-                    alert( "Soyadınız Girin." );
-                    return false;
-                }
-                else if(form.password.value == ""){
-                    alert( "Şifre Girin." );
-                    return false;
-                }
-                else if(form.uemail.value == ""){
-                    alert( "Email Girin." );
-                    return false;
-                }
-            }
-	</script> -->
     </head>
     <body>
         <div id="container" class="container">
